@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vector Addition — A Visual Intro for Coders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background: #121212;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #90caf9;
+    }
+    code {
+      background: #1e1e1e;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    pre {
+      background: #1e1e1e;
+      padding: 1rem;
+      overflow-x: auto;
+      border-radius: 6px;
+    }
+    a {
+      color: #64b5f6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vector Addition — A Visual Intro for Coders</h1>
+
+  <p>When working in games, graphics, or simulations, vectors are everywhere. But what are they, really?</p>
+
+  <h2>What is a Vector?</h2>
+  <p>A <strong>vector</strong> is a direction and magnitude — usually visualized as an arrow. It tells you how far to move, and in what direction.</p>
+
+  <p>In 2D code, a vector is typically written as:</p>
+  <pre><code>let v = { x: 50, y: -20 };</code></pre>
+  <p>This means: move 50 units right, 20 units up.</p>
+
+  <h2>Adding Vectors</h2>
+  <p>You can <strong>add</strong> two vectors by placing them tip-to-tail. The resulting vector connects the start of the first to the tip of the second.</p>
+
+  <pre><code>let a = { x: 50, y: 0 };
+let b = { x: 0, y: 50 };
+
+let sum = { x: a.x + b.x, y: a.y + b.y };  // { x: 50, y: 50 }</code></pre>
+
+  <p>Visually, it forms a right triangle — and the sum vector is the diagonal.</p>
+
+  <h2>Why it Matters</h2>
+  <p>Adding vectors lets you:</p>
+  <ul>
+    <li>Combine multiple movements</li>
+    <li>Add forces (like gravity + jump)</li>
+    <li>Animate complex behaviors</li>
+    <li>Simulate physics or camera motion</li>
+  </ul>
+
+  <h2>Try It Live</h2>
+  <p>Play with our <a href="../vector-addition.html">Vector Addition Demo</a> and drag the vectors yourself. See how they combine in real time.</p>
+
+  <hr />
+  <p><em>Next Step:</em> Learn about <strong>dot product</strong> — the math behind light, aim, and projection.</p>
+</body>
+</html>
